@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Analógico</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>DAT Linha Branca</h1>
+<IMG src="noticia.png"STYLE="POSITION:absolute;top:100px;left:1400px;">
+    <div class="relogio">
+        <div class="riscos">
+            <div class="risco" style="transform: rotate(0deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(30deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(60deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(90deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(120deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(150deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(180deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(210deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(240deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(270deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(300deg)"><div class="ponto"></div></div>
+            <div class="risco" style="transform: rotate(330deg)"><div class="ponto"></div></div>
+        </div>
+        <div class="ponteiros">
+            <div class="p p_s"></div>
+            <div class="p p_m"></div>
+            <div class="p p_h"></div>
+            <div class="encaixe"></div>
+        </div>
+    </div>
+    <div class="digital"> ---:---:--- </div>
+
+    <footer>% POR POSTO</footer>
+    <script src="script.js"></script>
+   <!-- Styles -->
+<style>
+    #chartdiv {
+      width: 100%;
+      height: 500px;
+    }
+    </style>
+    <!-- Resources -->
+    <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
+    <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+    
+    <!-- Chart code -->
+    <script>
+    am5.ready(function() {
+    
+    // Create root element
+    // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+    var root = am5.Root.new("chartdiv");
+    
+    
+    // Set themes
+    // https://www.amcharts.com/docs/v5/concepts/themes/
+    root.setThemes([
+      am5themes_Animated.new(root)
+    ]);
+    
+    
+    // Create chart
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/
+    var chart = root.container.children.push(am5percent.PieChart.new(root, {
+      layout: root.verticalLayout
+    }));
+    
+    
+    // Create series
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Series
+    var series = chart.series.push(am5percent.PieSeries.new(root, {
+      valueField: "value",
+      categoryField: "category"
+    }));
+    
+    
+    // Set data
+    // https://www.amcharts.com/docs/v5/charts/percent-charts/pie-chart/#Setting_data
+    series.data.setAll([
+      { value: 300, category: "B01" },
+      { value: 245, category: "B02" },
+      { value: 154, category: "B07" },
+      { value: 254, category: "B13" },
+      { value: 265, category: "B37" },
+      { value: 250, category: "B38" },
+      { value: 154, category: "B54" },
+      { value: 145, category: "B55" },
+    ]);
+    
+    
+    // Play initial series animation
+    // https://www.amcharts.com/docs/v5/concepts/animations/#Animation_of_series
+    series.appear(1000, 100);
+    
+    }); // end am5.ready()
+    </script>
+    <!-- HTML -->
+    <div id="chartdiv"></div>
+    <IMG src="PENDENCIA.png" style="position: absolute; top:30px;left:30px">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XPrsDvK0keQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <h1 style="background-color:Tomato;font-family:verdana;">O trabalho em equipe é mais rico, forte e por isso capaz de alcançar as metas mais difíceis!</h1>  
+ 
+      
+</body>
+</html>
