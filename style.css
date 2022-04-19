@@ -89,7 +89,7 @@ h1 {
 }
 .digital {
     color: rgb(0, 0, 0);
-    font-size: 140px;
+    font-size: 190px;
     margin-top: 17px;
 }
 
@@ -101,8 +101,8 @@ footer {
 }
 iframe {
     position:relative;
-    top:-1000px;
-    left:-550px;
+    top:-940px;
+    left:-516px;
 }
 
 
