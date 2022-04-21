@@ -89,7 +89,7 @@ h1 {
 }
 .digital {
     color: rgb(0, 0, 0);
-    font-size: 190px;
+    font-size: 140px;
     margin-top: 17px;
 }
 
@@ -99,11 +99,21 @@ footer {
     font-size: 8px;
     
 }
-iframe {
-    position:relative;
-    top:-940px;
-    left:-516px;
+figure {
+    position:absolute;
+
+    margin-top: -20px;
+    margin-left: -830px;
+    border: 2px solid rgb(241, 7, 7);
 }
+iframe {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 410px;
+    border: 2px solid rgb(241, 7, 7);
+
+}
+    
 
 
   
