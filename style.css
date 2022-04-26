@@ -102,14 +102,15 @@ footer {
 figure {
     position:absolute;
 
-    margin-top: -20px;
-    margin-left: -830px;
+    margin-top: -30px;
+    margin-left: -785px;
     border: 8px solid rgb(5, 5, 5);
+    box-shadow: 2px 2px 2px white 
 }
 iframe {
     position: absolute;
     margin-top: -20px;
-    margin-left: 410px;
+    margin-left: 390px;
     border: 2px solid rgb(241, 7, 7);
 
 }
